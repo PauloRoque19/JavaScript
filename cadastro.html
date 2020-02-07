@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        
+
+    <div align = "center" style="background-color: chartreuse">
+
+    
+       <form>
+
+
+        <label for="nome">Nome</label><br>
+        <input type="text" name="nome" id="nome" required placeholder="Informe o nome"><br>
+        
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" required placeholder="Informe o Email"><br>
+        
+        <label for="telefone">Telefone</label><br>
+        <input type="text" name="telefone" id="telefone" required placeholder="Informe o telefone"><br>
+        
+        <label for="cpf">CPF</label><br>
+        <input type="text" name="cpf" id="cpf" required placeholder="Informe o CPF"><br>
+
+        <input type="submit" name="enviar" id="enviar"  value="Enviar"/>
+        <input type="reset" name="resetar" id="resetar" value="Limpar"/>
+
+        
+        </form>
+    </div>
+</body>
+<script>
+var nome = document.querySelector('#nome').value;
+var email = document.querySelector('#email').value;
+var telefone = document.querySelector('#telefone').value;
+var cpf = document.querySelector('#cpf').value;
+
+console.log(nome);
+console.log(email);
+console.log(telefone);
+console.log(cpf);
+</script>
+
+
+
+</html>
