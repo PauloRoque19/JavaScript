@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input onclick="somar()
+        " type="submit" name="somar" id="enviar"  value="Somar"/>
+
+        <input onclick="multiplicar()
+        " type="submit" name="multiplicar" id="enviar1"  value="Multiplicar"/>
+
+        <input onclick="dividir()
+        " type="submit" name="dividir" id="enviar2"  value="Dividir"/>
+
+        <input onclick="subtrair()
+        " type="submit" name="subtrair" id="enviar3"  value="Subtrair"/>
+</body>
+
+<script>
+
+const valores = [2,23,1,56,34,232,6666,3434]
+
+function somar(){
+    //var soma = valores[0] + valores[1]+valores[2]+valores[3]+valores[4]+valores[5]+valores[6]+valores[7];
+
+    let somatorio = 0;
+
+    valores.forEach(e =>{
+        somatorio = somatorio + e;
+    })
+    
+    console.log(somatorio);
+}
+
+function multiplicar(){
+    let somatorio1 = 1;
+    
+
+    valores.forEach(e =>{
+        somatorio1 = somatorio1 * e;
+    })
+
+    console.log(somatorio1)
+}
+
+function dividir(){
+    let somatorio2 = 0;
+    
+    valores.forEach(e =>{
+        somatorio2 = e ;
+        calc = somatorio2 / e++;
+        somatorio2 = calc;
+        console.log(somatorio2)
+    })
+   
+    
+
+}
+
+function subtrair(){
+    let somatorio3 = 0;
+
+    valores.forEach(e =>{
+        somatorio3 = e ;
+        
+    })
+    somatorio3 += -2;
+    console.log(somatorio3)
+}
+
+ </script>   
+</html>
